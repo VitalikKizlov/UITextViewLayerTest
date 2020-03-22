@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CustomizeTextStyleView" customModule="TextViewLayerTest" customModuleProvider="target">
+            <connections>
+                <outlet property="contentView" destination="iN0-l3-epB" id="XPb-La-HUE"/>
+                <outlet property="instaStyleButton" destination="BZJ-B1-IV4" id="gg7-QA-3h8"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="120"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" spacing="6" translatesAutoresizingMaskIntoConstraints="NO" id="gNJ-7N-N8M">
+                    <rect key="frame" x="0.0" y="44" width="414" height="76"/>
+                    <subviews>
+                        <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Y2o-xM-D1m" userLabel="ClassicButton">
+                            <rect key="frame" x="0.0" y="0.0" width="87.5" height="76"/>
+                            <state key="normal" image="ClassicStyleButton"/>
+                        </button>
+                        <button opaque="NO" alpha="0.84999999999999998" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BZJ-B1-IV4" userLabel="InstaStyleButton">
+                            <rect key="frame" x="93.5" y="0.0" width="74" height="76"/>
+                            <color key="backgroundColor" red="0.4392156862745098" green="0.4392156862745098" blue="0.4392156862745098" alpha="1" colorSpace="calibratedRGB"/>
+                            <state key="normal" title="Label">
+                                <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </state>
+                        </button>
+                        <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZtN-wA-mlY" userLabel="ScriptButton">
+                            <rect key="frame" x="173.5" y="0.0" width="91" height="76"/>
+                            <state key="normal" image="ScriptStyleButton"/>
+                        </button>
+                        <button opaque="NO" tag="5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="d93-We-x28" userLabel="SerifButton">
+                            <rect key="frame" x="270.5" y="0.0" width="60.5" height="76"/>
+                            <state key="normal" image="SerifStyleButton"/>
+                        </button>
+                        <button opaque="NO" tag="6" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iVc-Ad-Ca7" userLabel="BoldButton">
+                            <rect key="frame" x="337" y="0.0" width="77" height="76"/>
+                            <state key="normal" image="BoldStyleButton"/>
+                        </button>
+                    </subviews>
+                </stackView>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="gNJ-7N-N8M" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="Cge-hC-ARf"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="gNJ-7N-N8M" secondAttribute="bottom" id="Uxu-Pa-GAo"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="gNJ-7N-N8M" secondAttribute="trailing" id="dHn-p2-nhc"/>
+                <constraint firstItem="gNJ-7N-N8M" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="raY-ft-DdR"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <point key="canvasLocation" x="139" y="149"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="BoldStyleButton" width="36" height="16"/>
+        <image name="ClassicStyleButton" width="52" height="16"/>
+        <image name="ScriptStyleButton" width="54" height="21"/>
+        <image name="SerifStyleButton" width="36" height="23"/>
+    </resources>
+</document>
